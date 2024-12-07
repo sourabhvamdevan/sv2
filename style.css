@@ -132,14 +132,30 @@ footer {
     }
 }
 
-.typewriter h2, .typewriter p {
-    overflow: hidden; /* Ensures content is not visible until it's typed */
-    border-right: .15em solid #ff0000; /* Cursor effect */
-    white-space: nowrap; /* Keeps content on one line */
-    margin: 0 auto; /* Gives the illusion of centered text, adjust as needed */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+#about {
+    padding: 2rem;
+    text-align: center;
+    background: #ffffff; 
+    color: #000000; 
+    max-width: 800px;
+    margin: 0 auto;
 }
+
+.typewriter h2 {
+    margin-bottom: 1rem;
+    font-size: 2em;
+    color: #0000ff; 
+}
+
+.typewriter p {
+    font-size: 1.2em;
+    font-family: "Courier New", Courier, monospace;
+    overflow: hidden; 
+    white-space: nowrap; 
+    border-right: 2px solid #ff0000; /
+    animation: typing 4s steps(50, end), blink-caret 0.7s step-end infinite;
+}
+
 
 @keyframes typing {
     from { width: 0 }
